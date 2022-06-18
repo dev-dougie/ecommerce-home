@@ -1,0 +1,29 @@
+.tip-bar {
+    margin-top: 10px;
+    margin-bottom: 74px;
+}
+
+.tip-bar h3 {
+    text-align: center;
+}
+
+.tipbar-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5%;
+    margin-top: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+    .tip-bar {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+    .title {
+        margin-top: 21px;
+    }
+}

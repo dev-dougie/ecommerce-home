@@ -1,0 +1,30 @@
+.tipbar-info {
+    display: flex;
+    background-color: #efefef;
+    border-radius: 4px;
+    height: 64px;
+    width: 300px;
+    align-items: center;
+    margin: 0 8px;
+}
+
+
+.tipbar-info img {
+    padding-left: 8px;
+}
+
+.tipbar-info .text {
+    margin-left: 8px;
+}
+
+.tipbar-info .text  p {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+@media screen and (max-width: 1024px) {
+    .tipbar-info{
+        display: flex !important;
+        padding-left: 26px;
+    }
+}

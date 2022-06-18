@@ -1,0 +1,27 @@
+.main-shelf h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0em;
+    margin-top: 80px;
+    margin-bottom: 24px;
+    text-align: center;
+
+}
+
+/* ul {
+    padding: 0 20px;
+} */
+
+.main-shelf .slick-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .main-shelf .slick-list{
+        padding: 0px 25px !important;
+    } 
+}

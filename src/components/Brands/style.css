@@ -1,0 +1,48 @@
+.brands {
+    margin-top: 64px;
+    padding: 0 5%;
+}
+
+.brands .title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #353535;
+
+
+}
+
+.brands .logos {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.brands .logos .logo-container {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brands .logos .logo-container img {
+    max-width: 100%;
+}
+
+
+@media screen and (max-width: 1023px){
+    .brands title{
+
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 37px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    .brands {
+        margin-top: 40px;
+    }
+}

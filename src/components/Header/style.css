@@ -1,0 +1,273 @@
+.top-bar {
+    background: #353535;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 24px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    z-index: 999;
+}
+
+.header-main,
+.left-side,
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.header-main {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5%;
+    height: 88px;
+    box-shadow: 0px 4px 6px 0px #00000014;
+}
+
+
+.header-main {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5%;
+    align-items: center;
+}
+
+.header-main .logo {
+    margin-right: 60px;
+}
+
+.header-main .search {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.header-main .search input {
+    background-color: #efefef;
+    border-radius: 10px;
+    max-width: 791px;
+    padding-left: 24px;
+    width: 95%;
+    border: none;
+    height: 40px;
+}
+
+.header-main .search input::placeholder {
+    color: #353535;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.header-main .search button {
+    width: 119px;
+    height: 40px;
+    border-radius: 8px;
+    gap: 10px;
+    cursor: pointer;
+    background-color: #faa500;
+    border: none;
+    right: 5%;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    text-align: center;
+}
+
+.header-main .account {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.header-main .account button {
+    background-color: transparent;
+    border: none;
+    width: 130px;
+    height: 21px;
+    font-size: 14px;
+    line-height: 21px;
+    cursor: pointer;
+    color: #353535;
+    padding-left: 14px;
+    background-position: 10px;
+}
+
+.header-main .account button.my-account {
+    background-image: url('../../assets/images/accout-icon.png');
+    background-repeat: no-repeat;
+}
+
+.header-main .account button.wishlist {
+    background-image: url('../../assets/images/wishlist-icon.png');
+    background-repeat: no-repeat;
+}
+
+.header-main .account button.minicart {
+    background-image: url('../../assets/images/minicart-icon.png');
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    width: 134px;
+    align-items: center;
+    border: 1px solid #faa500;
+    transition: 0.6s all;
+}
+
+.header-main .account button.minicart:hover {
+    background: #faa500;
+    color: #FFFFFF;
+}
+
+.minicart-itens{
+    background-color: rgb(223, 58, 58);
+    color: #fff;
+    font-weight: 800;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    position: absolute;
+    right: 4%;
+    top: 25%
+}
+
+.left-side img {
+    justify-content: center;
+}
+
+.left-side {
+    width: 55%;
+}
+
+.form-search {
+    margin-left: 93px;
+}
+
+.search-bar {
+    height: 40px;
+    border-radius: 10px;
+    color: #353535;
+    background: #EFEFEF;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.menu-departaments {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-departaments ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu-departaments ul li {
+    max-width: 148px;
+}
+
+.menu-departaments ul li a {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0 44px;
+    text-decoration: none;
+    color: #353535;
+}
+
+.menu-departaments ul li:first-child a {
+    background: url('../../assets/images/dress-icon.png');
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    padding-left: 18px;
+}
+
+
+.menu-departaments ul li a:hover {
+    color: #FAA500;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .header-desktop {
+        display: none;
+    }
+
+    .header-main {
+        justify-content: space-between;
+    }
+
+    .top-bar {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-and-search,
+    .user-action {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .logo-and-search img:last-child {
+        width: 110px;
+        margin-left: 19px;
+    }
+
+
+    .minicart-itens{
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+        right: 1%;
+        top: 25%
+    }
+
+
+    button.search,
+    button.wishlist {
+        background-color: transparent;
+        border: none;
+    }
+
+    button.wishlist {
+        margin-left: 36px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header-mobile {
+        display: none;
+    }
+}

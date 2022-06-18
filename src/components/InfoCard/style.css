@@ -1,0 +1,59 @@
+.infocard {
+    margin-top: 48px;
+    display: flex;
+    padding: 0 5%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.infocard .area-text {
+    width: 420px;
+}
+
+.info h4 {
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: 700;
+}
+
+.info p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.image-infocard img {
+    width: 680px;
+}
+
+@media screen and (max-width: 1023px) {
+    .infocard {
+        display: flex !important;
+        flex-direction: column;
+        margin-top: 24px;
+        padding: 0  31px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .infocard p {
+        margin-top: 16px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .infocard .area-text {
+        width: 100%;
+    }
+
+    .image-infocard img {
+        width: 298px;
+        margin-top: 24px;
+    }
+}
